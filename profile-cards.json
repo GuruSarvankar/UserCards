@@ -1,0 +1,23 @@
+[
+  {
+    "name": "John Doe",
+    "company": "Microsoft",
+    "job": "Web Developer",
+    "imageUrl": "img/1.jpg",
+    "jobDetails": "A MERN stack web developer is skilled in building dynamic web applications using MongoDB, Express.js, React.js, and Node.js technologies. "
+  },
+  {
+    "name": "Jane Smith",
+    "company": "Google",
+    "job": "Graphic Designer",
+    "imageUrl": "img/2.jpg",
+    "jobDetails": "A graphic designer specializes in visual communication, utilizing creative skills to design captivating and effective graphics for various purposes, including branding, advertising, and digital media."
+  },
+  {
+    "name": "Alice Johnson",
+    "company": "Brain2Brands",
+    "job": "UX Designer",
+    "imageUrl": "img/3.jpg",
+    "jobDetails": "A UX designer focuses on enhancing user satisfaction and usability by creating intuitive and visually appealing interfaces for digital products, ensuring a seamless and enjoyable user experience."
+  }
+]
