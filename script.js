@@ -16,26 +16,28 @@ function displayProfileCards(profiles) {
 
   profiles.forEach((profile) => {
     const profileDetails = document.createElement("div");
-    profileDetails.classList.add("col");
+    profileDetails.classList.add("col-md-3", "col-sm-12", "col-xs-12");
+    profileDetails.classList.add("shadow-lg", "p-3", "rounded");
 
     const profileImg = document.createElement("img");
     profileImg.src = `${profile.imageUrl}`;
-    profileImg.width = 200;
-    profileImg.className = "rounded-pill";
+    //profileImg.width = 200;
+    profileImg.className = "rounded img-fluid";
     profileDetails.appendChild(profileImg);
 
-    const cardname = document.createElement("h5");
-    cardname.textContent = `Name: ${profile.name}`;
-    profileDetails.appendChild(cardname);
-    cardname.classList.add("card-title");
+    const userName = document.createElement("h5");
+    userName.textContent = `${profile.name}`;
+    profileDetails.appendChild(userName);
+    userName.classList.add("card-title", "py-4");
 
-    const companyDiv = document.createElement("h6");
-    companyDiv.textContent = `${profile.job} - ${profile.company}`;
-    profileDetails.appendChild(companyDiv);
+    const userCompanyName = document.createElement("h6");
+    userCompanyName.textContent = `${profile.job} - ${profile.company}`;
+    profileDetails.appendChild(userCompanyName);
+    userCompanyName.classList.add("pb-3");
 
-    const jobDetailsDiv = document.createElement("p");
-    jobDetailsDiv.textContent = `Job Details: ${profile.jobDetails}`;
-    profileDetails.appendChild(jobDetailsDiv);
+    const jobDetails = document.createElement("p");
+    jobDetails.textContent = `${profile.jobDetails}`;
+    profileDetails.appendChild(jobDetails);
 
     profileContainer.appendChild(profileDetails);
   });
